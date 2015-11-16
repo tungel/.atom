@@ -1,0 +1,47 @@
+"*":
+  whitespace:
+    removeTrailingWhitespace: false
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-material-ui"
+      "monokai-slate"
+    ]
+    disabledPackages: [
+      "vim-mode"
+      "ex-mode"
+    ]
+  editor:
+    invisibles:
+      eol: " "
+      cr: " "
+    showIndentGuide: true
+    fontSize: 12
+    fontFamily: "Dejavu Sans Mono for Powerline"
+    lineHeight: 1.2
+    showInvisibles: true
+  "vim-mode": {}
+  "highlight-line": {}
+  "highlight-selected": {}
+  "git-plus": {}
+  "goto-last-edit": {}
+  "seti-icons":
+    iconsPlus: true
+  "atom-material-ui":
+    ui:
+      accentColor: "Blue"
+    tabs:
+      tabSize: "Small"
+      showTabIcons: "Show on all tabs"
+    fonts: {}
+    treeView:
+      compactTreeView: true
+    panels:
+      panelContrast: true
+  "vim-mode-plus":
+    incrementalSearch: true
+    useClipboardAsDefaultRegister: true
+".erb.html.text":
+  editor:
+    showInvisibles: false

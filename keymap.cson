@@ -1,0 +1,67 @@
+'.platform-linux atom-text-editor':
+  'ctrl-r': 'symbols-view:toggle-file-symbols'
+  'ctrl-h': 'core:backspace'
+  'ctrl-w': 'editor:delete-to-beginning-of-word'
+  'ctrl-[': 'core:cancel'
+  'ctrl-m': 'find-and-replace:select-next'
+
+
+'atom-workspace atom-pane':
+  'alt--': 'pane:decrease-size'
+  'alt-=': 'pane:increase-size'
+
+'.platform-win32, .platform-linux':
+  'ctrl-n': 'tree-view:toggle'
+
+'atom-workspace':
+  ', tab': 'tab-switcher:next'
+  'ctrl-shift-tab': 'tab-switcher:previous'
+  'g ;': 'goto-last-edit:run'
+  
+# 'atom-workspace:not([mini])':
+#   # Paner's split command sync scroll ratio when split vertically, horizontally.
+#   # So you won't get lost where cursor is?
+#   'ctrl-w s': 'paner:split-down'  
+#   'ctrl-w v': 'paner:split-right' 
+#   'ctrl-w H': 'paner:very-left'   
+#   'ctrl-w J': 'paner:very-bottom' 
+#   'ctrl-w K': 'paner:very-top'    
+#   'ctrl-w L': 'paner:very-right'  
+
+'.platform-linux':
+  ', b': 'fuzzy-finder:toggle-buffer-finder'
+
+
+# Vim stuff
+'atom-text-editor.vim-mode.normal-mode':
+  'ctrl-h': 'vim-mode:delete-left'
+  ', o': 'symbols-view:toggle-file-symbols'
+  ', c': 'core:close'
+  ', f': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-[': 'vim-mode:activate-normal-mode'
+
+'atom-text-editor.vim-mode.insert-mode':
+  'j k': 'vim-mode:activate-normal-mode'
+  'ctrl-[': 'vim-mode:activate-normal-mode'
+  'ctrl-h': 'core:backspace'
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
+  
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'j k': 'vim-mode-plus:reset-normal-mode'
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
+
+'atom-text-editor.vim-mode-plus.normal-mode':
+  ', o': 'symbols-view:toggle-file-symbols'
+  ', c': 'core:close'
+  ', f': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-w s': 'paner:split-down'
+  'ctrl-w v': 'paner:split-right'
+  'ctrl-w H': 'paner:very-left'
+  'ctrl-w J': 'paner:very-bottom'
+  'ctrl-w K': 'paner:very-top'
+  'ctrl-w L': 'paner:very-right'
+  
+'atom-text-editor.vim-mode-plus.visual-mode.blockwise':
+  'ctrl-[': 'vim-mode-plus:reset-normal-mode'
