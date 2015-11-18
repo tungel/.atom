@@ -11,6 +11,8 @@
     disabledPackages: [
       "vim-mode"
       "ex-mode"
+      "linter-rubocop"
+      "linter"
     ]
   editor:
     invisibles:
@@ -20,7 +22,6 @@
     fontSize: 12
     fontFamily: "Dejavu Sans Mono for Powerline"
     lineHeight: 1.2
-    showInvisibles: true
   "vim-mode": {}
   "highlight-line": {}
   "highlight-selected": {}
@@ -42,6 +43,12 @@
   "vim-mode-plus":
     incrementalSearch: true
     useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+  "ctags-status": {}
+  "trailing-spaces": {}
+  "linter-rubocop":
+    command: "/home/tung/.rvm/gems/ruby-2.1.5/bin/rubocop"
+  linter: {}
 ".erb.html.text":
   editor:
     showInvisibles: false

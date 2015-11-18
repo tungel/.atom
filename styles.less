@@ -2,3 +2,42 @@ atom-text-editor::shadow .invisible-character {
   //  color: hsl(0,50%,50%);
    color: rgb(69,69,69);
 }
+
+// hide the folding icon near line number column on the left
+atom-text-editor::shadow .icon-right {
+  width: 0 !important;
+  display: none;
+}
+
+// show trailing-whitespace
+atom-text-editor,
+atom-text-editor::shadow  {
+  .trailing-whitespace {
+    border-bottom-color: rgb(100, 100, 100); //rgb(204,0,153);
+  }
+}
+
+// https://github.com/atom/vim-mode/issues/201
+atom-text-editor.vim-mode-plus.normal-mode,
+atom-text-editor.vim-mode-plus.operator-pending-mode,
+atom-text-editor.vim-mode-plus.visual-mode
+{
+  &, // only keep this if you want to see the cursor on non-focused tabs
+  &.is-focused {
+    &::shadow, // shadow-DOM enabled
+    &          // shadow-DOM disabled
+    {
+      /* cursor color */
+      .cursor {
+        // cursor styles
+        background-color: rgb(255,255,255);
+        // background-color: rgba(255,0,140,1);
+        // visibility: visible !important;
+        visibility: visible;
+      }
+      .blink-off .cursor {
+        // cursor style while blinking (if you so desire)
+      }
+    }
+  }
+}

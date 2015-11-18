@@ -46,7 +46,7 @@
   'ctrl-h': 'core:backspace'
   'ctrl-n': 'core:move-down'
   'ctrl-p': 'core:move-up'
-  
+
 'atom-text-editor.vim-mode-plus.insert-mode':
   'j k': 'vim-mode-plus:reset-normal-mode'
   'ctrl-n': 'core:move-down'
@@ -54,6 +54,7 @@
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   ', o': 'symbols-view:toggle-file-symbols'
+  ', s': 'symbols-view:toggle-project-symbols'
   ', c': 'core:close'
   ', f': 'fuzzy-finder:toggle-file-finder'
   'ctrl-w s': 'paner:split-down'
