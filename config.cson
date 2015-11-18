@@ -13,6 +13,8 @@
       "ex-mode"
       "linter-rubocop"
       "linter"
+      "lazy-motion"
+      "git-plus"
     ]
   editor:
     invisibles:
@@ -49,6 +51,11 @@
   "linter-rubocop":
     command: "/home/tung/.rvm/gems/ruby-2.1.5/bin/rubocop"
   linter: {}
+  "lazy-motion":
+    autoLand: true
+  smalls: {}
+  "fuzzy-finder":
+    preserveLastSearch: true
 ".erb.html.text":
   editor:
     showInvisibles: false

@@ -16,7 +16,6 @@
 'atom-workspace':
   ', tab': 'tab-switcher:next'
   'ctrl-shift-tab': 'tab-switcher:previous'
-  'g ;': 'goto-last-edit:run'
   
 # 'atom-workspace:not([mini])':
 #   # Paner's split command sync scroll ratio when split vertically, horizontally.
@@ -63,6 +62,43 @@
   'ctrl-w J': 'paner:very-bottom'
   'ctrl-w K': 'paner:very-top'
   'ctrl-w L': 'paner:very-right'
-  
+  's': 'smalls:start'
+  'g ;': 'goto-last-edit:run'
+
 'atom-text-editor.vim-mode-plus.visual-mode.blockwise':
   'ctrl-[': 'vim-mode-plus:reset-normal-mode'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  # below c and d commands cause delay when using c and d in normal mode
+  # 'c s' or 'd s', that's why we use prefix 'g'
+  'g s c': 'vim-mode-plus:change-surround'
+  'g s d': 'vim-mode-plus:delete-surround'
+  'g s s': 'vim-mode-plus:surround'
+  'g s w': 'vim-mode-plus:surround-word'
+
+# ------------------------------------------------------------------------------
+# Begin lazy motion
+# 'atom-text-editor.vim-mode-plus.normal-mode, atom-text-editor.vim-mode-plus.visual-mode':
+#   's':           'lazy-motion:forward'
+#   'ctrl-e':      'lazy-motion:forward-again'
+#
+# 'atom-text-editor.lazy-motion':
+#   'ctrl-u': 'editor:delete-to-beginning-of-line'
+#   ']':      'lazy-motion:forward'
+#   '[':      'lazy-motion:backward'
+#   ';':      'core:confirm'
+#   'ctrl-p': 'lazy-motion:set-history-prev'
+#   'ctrl-n': 'lazy-motion:set-history-next'
+#   'cmd-e':  'lazy-motion:set-cursor-word'
+# End lazy motion
+# ------------------------------------------------------------------------------
+
+'atom-text-editor.smalls.search':
+  ';': 'smalls:jump'
+
+'.command-palette atom-text-editor,
+.symbols-view atom-text-editor,
+.fuzzy-finder atom-text-editor':
+  'ctrl-p': 'core:move-up'
+  'ctrl-n': 'core:move-down'
+  'ctrl-h': 'core:backspace'
