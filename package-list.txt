@@ -13,6 +13,7 @@ linter-rubocop@0.4.4
 monokai@0.18.0
 monokai-slate@0.5.0
 paner@0.1.14
+recent-finder@0.4.4
 seti-icons@0.4.5
 smalls@0.1.8
 tab-numbers@0.3.0

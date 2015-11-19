@@ -56,6 +56,7 @@
   ', s': 'symbols-view:toggle-project-symbols'
   ', c': 'core:close'
   ', f': 'fuzzy-finder:toggle-file-finder'
+  ', m': 'recent-finder:toggle'
   'ctrl-w s': 'paner:split-down'
   'ctrl-w v': 'paner:split-right'
   'ctrl-w H': 'paner:very-left'
@@ -93,6 +94,7 @@
 # End lazy motion
 # ------------------------------------------------------------------------------
 
+# decided to use small instead of lazy motion (lazy-motion is quite nice though)
 'atom-text-editor.smalls.search':
   ';': 'smalls:jump'
 

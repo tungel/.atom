@@ -56,6 +56,7 @@
   smalls: {}
   "fuzzy-finder":
     preserveLastSearch: true
+  "recent-finder": {}
 ".erb.html.text":
   editor:
     showInvisibles: false
