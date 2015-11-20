@@ -20,5 +20,5 @@ tab-numbers@0.3.0
 tab-switcher@1.3.2
 underline-trailing-whitespace@1.4.0
 vim-mode@0.63.0
-vim-mode-plus@0.3.0
+vim-mode-plus@0.4.0
 
