@@ -41,3 +41,15 @@ atom-text-editor.vim-mode-plus.visual-mode
     }
   }
 }
+
+:host, atom-text-editor, atom-text-editor::shadow {
+  .line-number.ruby-block-highlight {
+    background-color: blue;
+  }
+
+  .highlights {
+    .ruby-block-highlight .region {
+      background-color: black;
+    }
+  }
+}

@@ -1,47 +1,62 @@
 "*":
-  whitespace:
-    removeTrailingWhitespace: false
-  welcome:
-    showOnStartup: false
+  "atom-ctags": {}
+  "atom-material-ui":
+    fonts: {}
+    panels:
+      panelContrast: true
+    tabs:
+      showTabIcons: "Show on all tabs"
+      tabSize: "Small"
+    treeView:
+      compactTreeView: true
+    ui:
+      accentColor: "Blue"
   core:
+    disabledPackages: [
+      "vim-mode"
+      "ex-mode"
+      "lazy-motion"
+      "git-plus"
+      "markdown-scroll-sync"
+      "linter-markdown"
+    ]
     themes: [
       "atom-material-ui"
       "monokai-slate"
     ]
-    disabledPackages: [
-      "vim-mode"
-      "ex-mode"
-      "linter-rubocop"
-      "linter"
-      "lazy-motion"
-      "git-plus"
-    ]
+  "ctags-status": {}
   editor:
-    invisibles:
-      eol: " "
-      cr: " "
-    showIndentGuide: true
-    fontSize: 12
     fontFamily: "Dejavu Sans Mono for Powerline"
+    fontSize: 12
+    invisibles:
+      cr: " "
+      eol: " "
     lineHeight: 1.2
-  "vim-mode": {}
-  "highlight-line": {}
-  "highlight-selected": {}
+    showIndentGuide: true
+  "fuzzy-finder":
+    preserveLastSearch: true
   "git-plus": {}
   "goto-last-edit": {}
+  "highlight-line": {}
+  "highlight-selected": {}
+  "lazy-motion":
+    autoLand: true
+  linter:
+    errorPanelHeight: 22
+    showErrorPanel: false
+    showErrorTabFile: false
+  "linter-rubocop":
+    command: "/home/tung/.rvm/gems/ruby-2.1.5/bin/rubocop"
+  "markdown-preview":
+    liveUpdate: false
+  "recent-finder": {}
+  "ruby-block":
+    highlightLineNumber: true
   "seti-icons":
     iconsPlus: true
-  "atom-material-ui":
-    ui:
-      accentColor: "Blue"
-    tabs:
-      tabSize: "Small"
-      showTabIcons: "Show on all tabs"
-    fonts: {}
-    treeView:
-      compactTreeView: true
-    panels:
-      panelContrast: true
+  smalls: {}
+  "trailing-spaces": {}
+  "vim-mode": {}
   "vim-mode-plus":
     incrementalSearch: true
     useClipboardAsDefaultRegister: true
@@ -62,6 +77,10 @@
     core: {}
     style: {}
   "proto-repl": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
 ".erb.html.text":
   editor:
     showInvisibles: false
