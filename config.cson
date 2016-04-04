@@ -57,6 +57,11 @@
   "fuzzy-finder":
     preserveLastSearch: true
   "recent-finder": {}
+  "atom-terminal-panel": {}
+  "terminal-plus":
+    core: {}
+    style: {}
+  "proto-repl": {}
 ".erb.html.text":
   editor:
     showInvisibles: false
